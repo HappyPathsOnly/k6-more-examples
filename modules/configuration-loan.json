@@ -1,0 +1,18 @@
+{
+    "vus": 20,
+    "duration": "5s",
+    "thresholds": {
+        "checks{check-case: status-is-2xx}": [
+            {
+                "threshold": "rate >= 0.99",
+                "abortOnFail": true
+            }
+        ],
+        "checks{check-case: monthly-installment-is-correct}": [
+            {
+                "threshold": "rate >= 0.99",
+                "abortOnFail": true
+            }
+        ]
+    }
+}

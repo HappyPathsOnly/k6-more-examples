@@ -1,0 +1,20 @@
+{
+    "stages": [
+        {
+            "duration": "5s",
+            "target": 10
+        },
+        {
+            "duration": "45s",
+            "target": 25
+        },
+        {
+            "duration": "2m",
+            "target": 50
+        },
+        {
+            "duration": "10s",
+            "target": 0
+        }
+    ]
+}
