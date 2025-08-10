@@ -13,8 +13,9 @@ This repository contains code samples and notes from a hands-on course on [k6](h
   - [3. Parallel and Sequential Calls](#3-parallel-and-sequential-calls)
   - [4. Custom Metrics](#4-custom-metrics)
   - [5. Grouping and Thresholds](#5-grouping-and-thresholds)
-  - [6. Test Lifecycle (init, setup, teardown)](#6-test-lifecycle-init-setup-teardown)
-  - [7. Environment Variables](#7-environment-variables)
+  - [6. Tags](#6-tags)
+  - [7. Test Lifecycle (init, setup, teardown)](#7-test-lifecycle-init-setup-teardown)
+  - [8. Environment Variables](#8-environment-variables)
 - [How to Run the Scripts](#how-to-run-the-scripts)
 - [References](#references)
 
@@ -69,7 +70,12 @@ This repository contains code samples and notes from a hands-on course on [k6](h
 - **Nested groups**: Structure complex scenarios.
 - **Custom thresholds**: Set performance targets for groups or metrics.
 
-### 6. Test Lifecycle (init, setup, teardown)
+### 6. Tags
+
+- **[See the tags directory.](./tags/)**
+- **Tags**: Tags in k6 are key-value pairs that you can attach to requests, checks, groups, and metrics. They allow you to categorize and filter results, set thresholds for specific request types, and generate more granular reports. Tags are especially useful for analyzing performance by endpoint, status code, or custom business logic.
+
+### 7. Test Lifecycle (init, setup, teardown)
 
 - **[See the lifecycle directory.](./lifecycle/)**
 - **init**: Code outside functions runs once at script load.
@@ -77,7 +83,7 @@ This repository contains code samples and notes from a hands-on course on [k6](h
 - **default()**: Main VU code, executed per iteration.
 - **teardown()**: Runs once after all VUs finish; useful for cleanup and validation.
 
-### 7. Environment Variables
+### 8. Environment Variables
 
 - **[See the environment-variables directory.](./environment-variables/)**
 - **__ENV**: Use environment variables to configure server addresses, credentials, and other parameters at runtime.
