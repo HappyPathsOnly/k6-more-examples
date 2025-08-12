@@ -18,6 +18,7 @@ This repository contains code samples and notes from a hands-on course on [k6](h
   - [8. Tags](#8-tags)
   - [9. Test Lifecycle (init, setup, teardown)](#9-test-lifecycle-init-setup-teardown)
   - [10. Environment Variables](#10-environment-variables)
+  - [11. HTTP Redirects](#11-http-redirects)
 - [How to Run the Scripts](#how-to-run-the-scripts)
 - [References](#references)
 
@@ -100,6 +101,11 @@ This repository contains code samples and notes from a hands-on course on [k6](h
 
 - **[See the environment-variables directory.](./environment-variables/)**
 - **__ENV**: Use environment variables to configure server addresses, credentials, and other parameters at runtime.
+
+### 11. HTTP Redirects
+
+- **[See the http-redirect directory.](./http-redirect/)**
+- **HTTP Redirect Handling**: Demonstrates how k6 handles HTTP redirects by default, how to configure the maximum number of redirects, and how to disable following redirects entirely. The scripts show how to test endpoints that return redirects, check redirect status codes, and validate the final destination or intermediate responses. This is useful for verifying redirect logic, authentication flows, and ensuring your API or web application behaves correctly when
 
 ---
 
